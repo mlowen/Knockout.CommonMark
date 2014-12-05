@@ -8,7 +8,7 @@ requirejs.config({
 });
 
 require(
-	[ 'knockout', 'domReady!' ],
+	[ 'knockout', '../knockout.commonmark', 'domReady!' ],
 	function (ko) {
 		ko.applyBindings({ text: ko.observable('') });
 	}
