@@ -10,6 +10,6 @@ requirejs.config({
 require(
 	[ 'knockout', 'domReady!' ],
 	function (ko) {
-		console.log('hello');
+		ko.applyBindings({ text: ko.observable('') });
 	}
 );
