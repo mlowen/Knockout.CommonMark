@@ -1,10 +1,23 @@
 # Knockout.CommonMark
 
+Knockout.CommonMark provides [Knockout](http://knockoutjs.com/) bindings for [CommonMark](http://commonmark.org/) allowing markdown stored in the view model to be displayed as HTML.
+
 ## Dependencies
+
+* [Knockout](http://knockoutjs.com/) - Was developed against v3.2.0 but should work with older versions.
+* [CommonMark](http://commonmark.org/) - Was developed against [v0.12](https://github.com/jgm/CommonMark/releases/tag/0.12). 
 
 ## Usage
 
+Knockout.CommonMark exposes itself as an AMD compliant module, if it can't do that it will add itself to the global scope. Once you have loaded Knockout.CommonMark then you can bind your view model like so:
+
+```html
+<div data-bind="commonmark: text"></div>
+```
+
 ### Issues
+
+If you find any issues while using Knockout.CommonMark please feel free to report them at the [GitHub Repository](https://github.com/mlowen/Knockout.CommonMark/issues).
 
 ## License
 
