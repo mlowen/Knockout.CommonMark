@@ -4,6 +4,8 @@
 
 ## Usage
 
+### Issues
+
 ## License
 
 Knockout.CommonMark is available under the MIT license which is as follows:
