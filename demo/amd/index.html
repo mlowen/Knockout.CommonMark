@@ -3,14 +3,18 @@
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" />
 	</head>
 	<body>
-		<div class="container">
+		<div class="container-fluid">
 			<div class="page-header">
 				<h1>Commonmark Knockout Bindings</h1>
 			</div>
-
-			<textarea class="form-control" data-bind="value: text, valueUpdate: 'afterkeydown'" style="height: 300px; margin-bottom: 20px;"></textarea>
-
-			<div data-bind="commonmark: text"></div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<textarea class="form-control" data-bind="value: text, valueUpdate: 'afterkeydown'" style="height: 300px; margin-bottom: 20px;"></textarea>	
+				</div>
+				<div class="col-md-6" data-bind="commonmark: text">
+				</div>
+			</div>
 		</div>
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js" data-main="app.js"></script>
