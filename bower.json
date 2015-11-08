@@ -1,0 +1,26 @@
+{
+  "name": "knockout-commonmark",
+  "homepage": "https://github.com/mlowen/Knockout.CommonMark",
+  "authors": [
+    "Mike Lowen <mike@mlowen.com>"
+  ],
+  "description": "Commonmark bindings for KnockoutJS",
+  "main": "src/knockout.commonmark.js",
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "knockout",
+    "commonmark"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+	"src",
+    "test",
+    "tests"
+  ]
+}
