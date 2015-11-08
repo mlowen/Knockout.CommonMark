@@ -1,0 +1,26 @@
+{
+  "name": "knockout-commonmark",
+  "version": "0.2.0",
+  "description": "CommonMark bindings for KnockoutJS",
+  "main": "src/knockout.commonmark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlowen/Knockout.CommonMark.git"
+  },
+  "keywords": [
+    "commonmark",
+    "knockout"
+  ],
+  "author": "Mike Lowen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mlowen/Knockout.CommonMark/issues"
+  },
+  "homepage": "https://github.com/mlowen/Knockout.CommonMark#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
