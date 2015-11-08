@@ -5,7 +5,7 @@
     "Mike Lowen <mike@mlowen.com>"
   ],
   "description": "Commonmark bindings for KnockoutJS",
-  "main": "src/knockout.commonmark.js",
+  "main": "dist/knockout.commonmark.js",
   "moduleType": [
     "amd",
     "globals"
