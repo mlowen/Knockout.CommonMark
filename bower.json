@@ -21,7 +21,9 @@
     "bower_components",
     "src",
     "test",
-    "tests"
+    "tests",
+	"demo",
+	"package.json"
   ],
   "dependencies": {
     "knockout": "~3.3.0",

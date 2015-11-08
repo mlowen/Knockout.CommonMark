@@ -1,0 +1,6 @@
+./src
+./demo
+./bower.json
+./gulpfile.js
+./.gitattributes
+./.gitignore
