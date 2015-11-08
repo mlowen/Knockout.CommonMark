@@ -4,10 +4,9 @@
 		var writer = commonmark.HtmlRenderer();
 
 		var convert = function (element, valueAccessor) {
-			var accessor = valueAccessor();
-			var actual = typeof accessor === 'function' ? accessor() : accessor;
+			var value = ko.unwrap(valueAccessor());
 
-			element.innerHTML = actual ? writer.render(reader.parse(actual)) : '';
+			element.innerHTML = value ? writer.render(reader.parse(value)) : '';
 		};
 
 		ko.bindingHandlers.commonmark = { init: convert, update: convert };
