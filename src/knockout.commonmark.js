@@ -1,6 +1,6 @@
 (function() {
 	var init = function(ko, commonmark) {
-		var reader = commonmark.DocParser();
+		var reader = commonmark.Parser();
 		var writer = commonmark.HtmlRenderer();
 
 		var convert = function (element, valueAccessor) {
