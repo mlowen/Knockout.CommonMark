@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" />
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="../../bower_components/knockout/dist/knockout.js"></script>
+		<script src="../../bower_components/commonmark/dist/commonmark.js"></script>
+		<script src="../../src/knockout.commonmark.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="page-header">
+				<h1>Commonmark Knockout Bindings</h1>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-6">
+					<textarea class="form-control" data-bind="value: text, valueUpdate: 'afterkeydown'" style="height: 300px; margin-bottom: 20px;"></textarea>	
+				</div>
+				<div class="col-md-6" data-bind="commonmark: text"></div>
+			</div>
+		</div>
+
+		<script>
+			$(function() {
+				ko.applyBindings({ text: ko.observable('') });
+			});
+		</script>
+	</body>
+</html>
