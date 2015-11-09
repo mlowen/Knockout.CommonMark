@@ -4,8 +4,24 @@ Knockout.CommonMark provides [Knockout](http://knockoutjs.com/) bindings for [Co
 
 ## Dependencies
 
-* [Knockout](http://knockoutjs.com/) - Was developed against v3.2.0 but should work with older versions.
-* [CommonMark](http://commonmark.org/) - Was developed against [v0.12](https://github.com/jgm/CommonMark/releases/tag/0.12). 
+* [Knockout](http://knockoutjs.com/) (3.3.0)
+* [CommonMark](http://commonmark.org/) (0.22.0) 
+
+## Installing
+
+You are always able to download the latest stable release from the [releases page on GitHub](https://github.com/mlowen/Knockout.CommonMark/releases) otherwise you can install via one of the following methods.
+
+### Bower
+
+```
+bower install knockout-commonmark
+```
+
+### NPM
+
+```
+npm install knockout-commonmark
+```
 
 ## Usage
 
@@ -15,9 +31,19 @@ Knockout.CommonMark exposes itself as an AMD compliant module, if it can't do th
 <div data-bind="commonmark: text"></div>
 ```
 
+For a basic example on how to use this please have a look at the demos.
+
 ### Issues
 
 If you find any issues while using Knockout.CommonMark please feel free to report them at the [GitHub Repository](https://github.com/mlowen/Knockout.CommonMark/issues).
+
+## Contributing
+
+Knockout.Commonmark is built using gulp by default running `gulp` will minimise the file, `gulp watch` is setup to minimise the file whenever the source file is changed. `gulp dist` will create a distribution archive containing only the following:
+
+* knockout.commonmark.js
+* README.md
+* LICENSE
 
 ## License
 
